@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+@font-face {
+  font-family: "waterlilly";
+  src: url(../fonts/Waterlily\ Script.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 10px;
+}
+
+:root {
+  --red: rgb(219, 13, 13);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  z-index: 1;
+  background: #000;
+}
+
+.home {
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  color: black;
+  /* position: fixed; */
+  
+
+}
+
+.home img {
+  position: absolute;
+  top: 30%;
+  height: 200px;
+  animation: glow 2s infinite;
+  text-shadow: 0 0 5px #999, 0 0 5px #999, 0 0 30px #999;
+
+}
+
+.tagline {
+  color: var(--red);
+  position: absolute;
+  font-size: 40px;
+  left: 0;
+  top: 65%;
+  margin: 30px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.pace {
+  color: black;
+  background: linear-gradient(to right, #000, #333, #666);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.eventspageTop {
+  height: 100vh;
+}
+
+.secondPageContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  background: transparent;
+
+}
+
+.secondPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px;
+  width: 90vw;
+  background: transparent;
+}
+
+.secondPage h1 {
+  color: var(--red);
+  position: relative;
+}
+
+.secondPage h1::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  margin: auto;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+}
+.thiredPage{
+  width: 100vw;
+}
+.imgP{
+  display: flex;
+}
+.imgP img{
+  height: 300px !important;
+  margin-right: 20px;
+  margin-top:35px;
+  border-radius: 5px;
+}
+
+.secondPage p {
+  color: white;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+/* navbar styling  */
+.navBar {
+  height: 80px;
+  width: 100vw;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 9999;
+  backdrop-filter: blur(2px);
+}
+
+.menu {
+  display: flex;
+  width: 50vw;
+  float: right;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  margin: 0px 20px;
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.navActive {
+  color: var(--red) !important;
+}
+
+.navLogo {
+  display: inline-block;
+}
+
+.navLogo img {
+  height: 60px;
+  margin: 10px;
+}
+
+#navbar.scrolled{
+  height: 60px;
+}
+
+#navbar.scrolled img {
+  max-height: 40px;
+}
+
+#navbar.scrolled .menu a {
+  color: #fff; 
+}
+
+
+
+
+
+
+/* footer css */
+.footer-section {
+  background: #cfcfcf;
+  position: relative;
+}
+
+.copyright-area {
+  background: #202020;
+  padding: 17px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.copyright-text p a {
+  color: red;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: red;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.phoneLogo {
+  display: none;
+}
+
+.codeWizyCred {
+  filter: invert(100%);
+}
+
+.codeWizyCred:hover {
+  filter: invert(0%);
+}
+
+/* home text animation */
+
+
+
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #999, 0 0 20px #999, 0 0 30px #999;
+  }
+
+  50% {
+    text-shadow: 0 0 10px #999, 0 0 30px #999, 0 0 40px #999;
+  }
+
+  75% {
+    text-shadow: 0 0 10x #999, 0 0 20px #999, 0 0 30px #999;
+  }
+
+  100% {
+    text-shadow: 0 0 5px #999, 0 0 20px #999, 0 0 30px #999;
+  }
+}

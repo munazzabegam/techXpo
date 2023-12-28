@@ -1,0 +1,42 @@
+@media (max-width:780px) {
+    body, html{
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    .home h1{
+        font-size: 100px;
+    }
+    .home p{
+        font-size: 30px;
+        -webkit-text-stroke: 0.5px black;
+    }
+    .home img{
+        height: 400px;
+    }
+    .card{
+        width: 90%;
+        margin: 5%;
+        overflow: hidden;
+    }
+    .eventsPage{
+        overflow: hidden;
+    }
+    .footerRow{
+        display: flex;
+        flex-direction: column;
+    }
+    .phoneLogo{
+        text-align: center;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .phoneLogo img{
+        height: 50px;
+        display: block;
+        filter: invert(90%);
+        margin: 10px 0px;
+
+    }
+}

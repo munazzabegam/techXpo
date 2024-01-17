@@ -36,7 +36,7 @@ function init() {
   material = new THREE.PointsMaterial({
     size: 2,
     color: 0xFF0000, 
-    });
+  });
 
   const particles = new THREE.Points(geometry, material);
   scene.add(particles);
@@ -44,13 +44,12 @@ function init() {
   renderer = new THREE.WebGLRenderer();
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
-  
+
   renderer.setClearColor(0xffffff);
 
   document.querySelector('.home').appendChild(renderer.domElement);
 
-  document.body.style.touchAction = 'none';
-  document.body.addEventListener('pointermove', onPointerMove);
+  window.addEventListener('mousemove', onPointerMove);
   window.addEventListener('resize', onWindowResize);
 }
 

@@ -41,6 +41,7 @@ body {
   background-size: cover;
   color: black;
   /* position: fixed; */
+  background: white;
   
 
 }
@@ -285,4 +286,18 @@ body {
 }
 .timerContainer{
   margin-top: -60px;
+}
+.regnowBtn{
+  width: 100%;
+  text-align: center;
+}
+.regnowBtn a{
+  background: red;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  
 }

@@ -129,4 +129,11 @@
     .firstPage h1 {
         font-size: 20px;
     }
+.popup{
+  max-width: 95vw;
+  max-height: 75vh;
+  margin-top: 0px;
+
+
+}
 }

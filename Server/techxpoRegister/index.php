@@ -27,6 +27,7 @@
             $altMobile = $_POST['AltMobile'];
             $reelVistaParticipantName = $_POST['ReelVistaParticipantName'];
             $battleRoyalParticipantName = $_POST['BattleRoyalParticipantName'];
+            $battleRoyalParticipantName2 = $_POST['BattleRoyalParticipantName2'];
             $turboTrackParticipantName = $_POST['TurboTrackParticipantName'];
             $colorCanvasParticipantName1 = $_POST['ColorCanvasParticipantName1'];
             $colorCanvasParticipantName2 = $_POST['ColorCanvasParticipantName2'];
@@ -44,7 +45,7 @@
                 $msg = "We're sorry, but it seems that you have already registered for TechXpo. If you believe this is a mistake or if you have any concerns, please contact our support team.";
                 echo '<p class="alert alert-danger">' . $msg . '</p>';
             } else {
-                $sql = "INSERT INTO RegistrationFormData (Uid, TeamName, CollegeName, CollegeAddress, TeamLeaderFullName, TeamLeaderEmail, TeamLeaderPhone, AltMobile, ReelVistaParticipantName, BattleRoyalParticipantName, TurboTrackParticipantName, ColorCanvasParticipantName1, ColorCanvasParticipantName2, TechnoQuotientParticipantName1, TechnoQuotientParticipantName2, FocusFiestaParticipantName, ProjectExpoParticipantName, date_time) VALUES ('$uniqueId', '$teamName', '$collegeName', '$collegeAddress', '$teamLeaderFullName', '$teamLeaderEmail', '$teamLeaderPhone', '$altMobile', '$reelVistaParticipantName', '$battleRoyalParticipantName', '$turboTrackParticipantName', '$colorCanvasParticipantName1', '$colorCanvasParticipantName2', '$technoQuotientParticipantName1', '$technoQuotientParticipantName2', '$focusFiestaParticipantName', '$ProjectExpoParticipantName', '$dateTime')";
+                $sql = "INSERT INTO RegistrationFormData (Uid, TeamName, CollegeName, CollegeAddress, TeamLeaderFullName, TeamLeaderEmail, TeamLeaderPhone, AltMobile, ReelVistaParticipantName, BattleRoyalParticipantName,BattleRoyalParticipantName2, TurboTrackParticipantName, ColorCanvasParticipantName1, ColorCanvasParticipantName2, TechnoQuotientParticipantName1, TechnoQuotientParticipantName2, FocusFiestaParticipantName, ProjectExpoParticipantName, date_time) VALUES ('$uniqueId', '$teamName', '$collegeName', '$collegeAddress', '$teamLeaderFullName', '$teamLeaderEmail', '$teamLeaderPhone', '$altMobile', '$reelVistaParticipantName', '$battleRoyalParticipantName','$battleRoyalParticipantName2', '$turboTrackParticipantName', '$colorCanvasParticipantName1', '$colorCanvasParticipantName2', '$technoQuotientParticipantName1', '$technoQuotientParticipantName2', '$focusFiestaParticipantName', '$ProjectExpoParticipantName', '$dateTime')";
 
                 if ($conn->query($sql) === TRUE) {
                     $msg = "Thank you for registering for TechXpo! An email will be sent to you with the registration details.";
@@ -68,7 +69,7 @@ Registration Details:
 - Team Leader Phone: $teamLeaderPhone
 - Alternative Mobile: $altMobile
 - Reel Vista Participant: $reelVistaParticipantName
-- Battle Royal Participant: $battleRoyalParticipantName
+- Battle Royal Participant: $battleRoyalParticipantName, $battleRoyalParticipantName2 
 - Turbo Track Participant: $turboTrackParticipantName
 - Color Canvas Participants: $colorCanvasParticipantName1, $colorCanvasParticipantName2
 - Techno Quotient Participants: $technoQuotientParticipantName1, $technoQuotientParticipantName2

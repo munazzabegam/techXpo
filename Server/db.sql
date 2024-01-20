@@ -16,6 +16,7 @@ CREATE TABLE RegistrationFormData (
     AltMobile VARCHAR(15),
     ReelVistaParticipantName VARCHAR(255),
     BattleRoyalParticipantName VARCHAR(255),
+    BattleRoyalParticipantName2 VARCHAR(255),
     TurboTrackParticipantName VARCHAR(255),
     ColorCanvasParticipantName1 VARCHAR(255),
     ColorCanvasParticipantName2 VARCHAR(255),

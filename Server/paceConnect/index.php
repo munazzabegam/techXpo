@@ -25,16 +25,12 @@
             $teamLeaderEmail = $_POST['TeamLeaderEmail'];
             $teamLeaderPhone = $_POST['TeamLeaderPhone'];
             $altMobile = $_POST['AltMobile'];
-            $reelVistaParticipantName = $_POST['ReelVistaParticipantName'];
-            $battleRoyalParticipantName = $_POST['BattleRoyalParticipantName'];
-            $battleRoyalParticipantName2 = $_POST['BattleRoyalParticipantName2'];
-            $turboTrackParticipantName = $_POST['TurboTrackParticipantName'];
-            $colorCanvasParticipantName1 = $_POST['ColorCanvasParticipantName1'];
-            $colorCanvasParticipantName2 = $_POST['ColorCanvasParticipantName2'];
-            $technoQuotientParticipantName1 = $_POST['TechnoQuotientParticipantName1'];
-            $technoQuotientParticipantName2 = $_POST['TechnoQuotientParticipantName2'];
-            $focusFiestaParticipantName = $_POST['FocusFiestaParticipantName'];
-            $ProjectExpoParticipantName = $_POST['ProjectExpoParticipantName'];
+            $colorPaletteParticipantName = $_POST['colorPaletteParticipantName'];
+            $brainBurstParticipantName = $_POST['brainBurstParticipantName'];
+            $brainBurstParticipantName2 = $_POST['brainBurstParticipantName2'];
+            $scicraftParticipantName1 = $_POST['scicraftParticipantName1'];
+            $scicraftParticipantName2 = $_POST['scicraftParticipantName2'];
+            $scicraftParticipantName3 = $_POST['scicraftParticipantName3'];
 
             $dateTime = date("Y-m-d H:i:s");
 
@@ -42,21 +38,21 @@
             $result = $conn->query($duplicateCheckQuery);
 
             if ($result->num_rows > 0) {
-                $msg = "We're sorry, but it seems that you have already registered for TechXpo. If you believe this is a mistake or if you have any concerns, please contact our support team.";
+                $msg = "We're sorry, but it seems that you have already registered for PaceConnect. If you believe this is a mistake or if you have any concerns, please contact our support team.";
                 echo '<p class="alert alert-danger">' . $msg . '</p>';
             } else {
-                $sql = "INSERT INTO RegistrationFormData (Uid, TeamName, CollegeName, CollegeAddress, TeamLeaderFullName, TeamLeaderEmail, TeamLeaderPhone, AltMobile, ReelVistaParticipantName, BattleRoyalParticipantName,BattleRoyalParticipantName2, TurboTrackParticipantName, ColorCanvasParticipantName1, ColorCanvasParticipantName2, TechnoQuotientParticipantName1, TechnoQuotientParticipantName2, FocusFiestaParticipantName, ProjectExpoParticipantName, date_time) VALUES ('$uniqueId', '$teamName', '$collegeName', '$collegeAddress', '$teamLeaderFullName', '$teamLeaderEmail', '$teamLeaderPhone', '$altMobile', '$reelVistaParticipantName', '$battleRoyalParticipantName','$battleRoyalParticipantName2', '$turboTrackParticipantName', '$colorCanvasParticipantName1', '$colorCanvasParticipantName2', '$technoQuotientParticipantName1', '$technoQuotientParticipantName2', '$focusFiestaParticipantName', '$ProjectExpoParticipantName', '$dateTime')";
+                $sql = "INSERT INTO RegistrationFormData (Uid, TeamName, CollegeName, CollegeAddress, TeamLeaderFullName, TeamLeaderEmail, TeamLeaderPhone, AltMobile, colorPaletteParticipantName, brainBurstParticipantName, brainBurstParticipantName2, scicraftParticipantName1, scicraftParticipantName2, scicraftParticipantName3, date_time) VALUES ('$uniqueId', '$teamName', '$collegeName', '$collegeAddress', '$teamLeaderFullName', '$teamLeaderEmail', '$teamLeaderPhone', '$altMobile', '$colorPaletteParticipantName', '$brainBurstParticipantName', '$brainBurstParticipantName2', '$scicraftParticipantName1', '$scicraftParticipantName2', '$scicraftParticipantName3', '$dateTime')";
 
                 if ($conn->query($sql) === TRUE) {
                     $msg = "Thank you for registering for TechXpo! An email will be sent to you with the registration details.";
                     echo '<p class="alert alert-success">' . $msg . '</p>';
 
                     // Send email to the submitter
-                    $to = array($teamLeaderEmail,"muhammedazlan20@gmail.com");
+                    $to = array($teamLeaderEmail, "muhammedazlan20@gmail.com");
                     $subject = "TechXpo Registration Successful";
                     $message = "Dear $teamLeaderFullName,
 
-Congratulations! Your registration for TechXpo has been successfully received.
+Congratulations! Your registration for Pace Connect has been successfully received.
                     
 Our team will verify your registration details, and upon successful verification, you will receive a confirmation email with further instructions.
                     
@@ -68,20 +64,16 @@ Registration Details:
 - College Address: $collegeAddress
 - Team Leader Phone: $teamLeaderPhone
 - Alternative Mobile: $altMobile
-- Reel Vista Participant: $reelVistaParticipantName
-- Battle Royal Participant: $battleRoyalParticipantName, $battleRoyalParticipantName2 
-- Turbo Track Participant: $turboTrackParticipantName
-- Color Canvas Participants: $colorCanvasParticipantName1, $colorCanvasParticipantName2
-- Techno Quotient Participants: $technoQuotientParticipantName1, $technoQuotientParticipantName2
-- Focus Fiesta Participant: $focusFiestaParticipantName
-- Project Expo Participant: $ProjectExpoParticipantName
+- Color Palette Participant: $colorPaletteParticipantName
+- Brain Burst Participants: $brainBurstParticipantName, $brainBurstParticipantName2
+- Sci-Craft Participants: $scicraftParticipantName1, $scicraftParticipantName2, $scicraftParticipantName3
 
 We appreciate your participation in TechXpo. If you have any questions or concerns, feel free to contact us.
 
 Best Regards,
 TechXpo Team
-+91 6361557581";
-                    
++91 6361557581
+";
 
                     // Additional headers
                     $headers = "From: info@techxpo.com";

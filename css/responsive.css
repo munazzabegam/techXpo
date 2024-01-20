@@ -1,4 +1,4 @@
-@media (max-width:780px) {
+@media (max-width:800px) {
 
     body,
     html {
@@ -61,12 +61,17 @@
 
     .menu {
         margin-top: -50px;
+        user-select: none;
+
     }
 
 
     .secondPage {
         width: 100vw;
         padding: 15px;
+    }
+    .secondPage p{
+        font-size: 13px;
     }
 
     .imgP {
@@ -129,11 +134,83 @@
     .firstPage h1 {
         font-size: 20px;
     }
-.popup{
-  max-width: 95vw;
-  max-height: 75vh;
-  margin-top: 0px;
 
+    .popup {
+        max-width: 95vw;
+        max-height: 75vh;
+        margin-top: 0px;
+
+
+    }
+
+    .eventMainPoster span {
+        margin-top: 30px;
+
+    }
+.eventMainPoster{
+    margin-top: 0px;
+}
+.paceConnect{
+    margin-top: 0px;
+}
+    .eventMainPoster h1 {
+        margin-top: 30px;
+
+    }
+
+    .paceConnect h1 {
+        width: 150%;
+        font-size: 20px;
+        text-align: center;
+    }
+.dropdown{
+    display: flex;
 
 }
+
+.nothingTeam{
+    height: 120px;
+}
+.dropdown i {
+    display: none;
+}
+.dropdown-content{
+    margin-top: 30px;
+}
+.reveletionsContainer img{
+    width: 90vw;
+  }
+  .Programs{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+  }
+  .Programs a{
+    margin: 10px;
+  }
+  .posterImg img{
+    width: 90vw;
+  }
+  .contP p{
+    font-size: 13px;
+  }
+  .otherEvents img{
+    width: 30%;
+  }
+  .otherEvents{
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+.techXpoLogoBottom{
+    height: 38px;
+}
+.otherDate{
+    margin-left: -45px;
+
+}
+.otherDate p{
+    width: 130%;
+  }
+
 }

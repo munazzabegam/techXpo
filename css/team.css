@@ -1,0 +1,107 @@
+
+.teams{
+    min-height: 100vh;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --br: 20px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nothingTeam{
+    height: 80px;
+}
+body {
+  min-height: 100vh;
+  background: #000;
+
+  font-size: 16px;
+}
+.containerr {
+  text-align: center;
+}
+.containerr h1{
+    font-size: 25px;
+    color: white;
+    background: rgb(228, 4, 4);
+    padding: 10px;
+}
+.row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.teamCard {
+  width: 25%;
+  background: #f3f1f1;
+  padding: 15px;
+  border-radius: var(--br);
+  transition: 0.5s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamCard:hover {
+  box-shadow: 0px 3px 10px 5px #ac0101;
+}
+.teamCard {
+    box-shadow: 0px 3px 10px 5px #535252b6;
+  }
+.teamCard h1{
+    color: white;
+}
+.teamCard h2{
+    font-size: 18px;
+}
+.teamCard img {
+  max-width: 200px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid red;
+}
+h1 {
+  margin: 20px 0;
+}
+h2 {
+  margin: 15px 0 5px;
+}
+.teamCard .role {
+  font-size: 80%;
+  color: #444;
+  margin-bottom: 20px;
+}
+.teamCard a {
+  background: var(--btn, #000);
+  color: #fff;
+  padding: 10px 15px;
+  width: 100%;
+  display: block;
+  border-radius: var(--br);
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .teamCard {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 420px) {
+  .teamCard {
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}

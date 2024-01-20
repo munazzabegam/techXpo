@@ -4,7 +4,10 @@
   font-family: "waterlilly";
   src: url(../fonts/Waterlily\ Script.ttf);
 }
-
+::selection{
+  background: red;
+  color: white;
+}
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -292,7 +295,7 @@ body {
   text-align: center;
 }
 .regnowBtn a{
-  background: red;
+  background: rgb(207, 3, 3);
   text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
@@ -301,3 +304,75 @@ body {
   border-radius: 5px;
   
 }
+
+
+    /* Add styles for dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 5px 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #555;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .posterImg{
+      width: 100vw;
+display: flex;
+justify-content: center;
+}
+    .posterImg img{
+      width: 60vw;
+    }
+    .otherEvents{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+
+    }
+    .otherEvents  img{
+      width: 200px;
+    }
+    .techXpoLogoBottom{
+      height: 60px;
+      user-select: none;
+  }
+  .otherDate p{
+    color: white;
+    width: 33%;
+    margin: 10px;
+    text-align: center;
+  }
+  .otherEvents span{
+    width: 87%;
+    height: 2px;
+    background: red;
+  }
+  .otherDate{
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }

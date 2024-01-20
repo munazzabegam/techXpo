@@ -29,6 +29,7 @@ CREATE TABLE TechXpo (
 
 CREATE TABLE PaceConnect (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    UId VARCHAR(30),
     TeamName VARCHAR(255) NOT NULL,
     CollegeName VARCHAR(255) NOT NULL,
     CollegeAddress TEXT NOT NULL,

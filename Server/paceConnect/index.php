@@ -34,17 +34,17 @@
 
             $dateTime = date("Y-m-d H:i:s");
 
-            $duplicateCheckQuery = "SELECT * FROM RegistrationFormData WHERE TeamLeaderEmail = '$teamLeaderEmail'";
+            $duplicateCheckQuery = "SELECT * FROM PaceConnect WHERE TeamLeaderEmail = '$teamLeaderEmail'";
             $result = $conn->query($duplicateCheckQuery);
 
             if ($result->num_rows > 0) {
                 $msg = "We're sorry, but it seems that you have already registered for PaceConnect. If you believe this is a mistake or if you have any concerns, please contact our support team.";
                 echo '<p class="alert alert-danger">' . $msg . '</p>';
             } else {
-                $sql = "INSERT INTO RegistrationFormData (Uid, TeamName, CollegeName, CollegeAddress, TeamLeaderFullName, TeamLeaderEmail, TeamLeaderPhone, AltMobile, colorPaletteParticipantName, brainBurstParticipantName, brainBurstParticipantName2, scicraftParticipantName1, scicraftParticipantName2, scicraftParticipantName3, date_time) VALUES ('$uniqueId', '$teamName', '$collegeName', '$collegeAddress', '$teamLeaderFullName', '$teamLeaderEmail', '$teamLeaderPhone', '$altMobile', '$colorPaletteParticipantName', '$brainBurstParticipantName', '$brainBurstParticipantName2', '$scicraftParticipantName1', '$scicraftParticipantName2', '$scicraftParticipantName3', '$dateTime')";
+                $sql = "INSERT INTO PaceConnect (Uid, TeamName, CollegeName, CollegeAddress, TeamLeaderFullName, TeamLeaderEmail, TeamLeaderPhone, AltMobile, colorPaletteParticipantName, brainBurstParticipantName, brainBurstParticipantName2, scicraftParticipantName1, scicraftParticipantName2, scicraftParticipantName3, date_time) VALUES ('$uniqueId', '$teamName', '$collegeName', '$collegeAddress', '$teamLeaderFullName', '$teamLeaderEmail', '$teamLeaderPhone', '$altMobile', '$colorPaletteParticipantName', '$brainBurstParticipantName', '$brainBurstParticipantName2', '$scicraftParticipantName1', '$scicraftParticipantName2', '$scicraftParticipantName3', '$dateTime')";
 
                 if ($conn->query($sql) === TRUE) {
-                    $msg = "Thank you for registering for TechXpo! An email will be sent to you with the registration details.";
+                    $msg = "Thank you for registering for Pace Connect! An email will be sent to you with the registration details.";
                     echo '<p class="alert alert-success">' . $msg . '</p>';
 
                     // Send email to the submitter

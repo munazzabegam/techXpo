@@ -8,7 +8,6 @@ $conn = new mysqli("localhost", "u214227927_PaceFest", "PaceFest2023", "u2142279
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 ?>
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);

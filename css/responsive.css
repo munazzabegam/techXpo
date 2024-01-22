@@ -38,10 +38,16 @@
         margin: 10px 0px;
 
     }
+.respHead{
+    font-size: 20px;
+}
 
+.respOverview{
+    margin-top: 100px !important;
+}
     .tagline {
         font-size: 25px;
-        top: 75%;
+        top: 78%;
     }
 
     .date {
@@ -70,7 +76,8 @@
         width: 100vw;
         padding: 15px;
     }
-    .secondPage p{
+
+    .secondPage p {
         font-size: 13px;
     }
 
@@ -80,6 +87,23 @@
         align-items: center;
     }
 
+    .imgP img {
+        height: 300px !important;
+
+    }
+
+    .eventTypes {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .eventTypes div p {
+        font-size: 13px;
+        width: 40vw;
+
+
+    }
 
     .thiredPage {
         width: 100vw;
@@ -147,12 +171,15 @@
         margin-top: 30px;
 
     }
-.eventMainPoster{
-    margin-top: 0px;
-}
-.paceConnect{
-    margin-top: 0px;
-}
+
+    .eventMainPoster {
+        margin-top: 0px;
+    }
+
+    .paceConnect {
+        margin-top: 0px;
+    }
+
     .eventMainPoster h1 {
         margin-top: 30px;
 
@@ -163,54 +190,67 @@
         font-size: 20px;
         text-align: center;
     }
-.dropdown{
-    display: flex;
 
-}
+    .dropdown {
+        display: flex;
 
-.nothingTeam{
-    height: 120px;
-}
-.dropdown i {
-    display: none;
-}
-.dropdown-content{
-    margin-top: 30px;
-}
-.reveletionsContainer img{
-    width: 90vw;
-  }
-  .Programs{
-    flex-direction: column;
-    align-items: center;
-    margin-top: 130px;
-  }
-  .Programs a{
-    margin: 10px;
-  }
-  .posterImg img{
-    width: 90vw;
-  }
-  .contP p{
-    font-size: 13px;
-  }
-  .otherEvents img{
-    width: 30%;
-  }
-  .otherEvents{
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-  }
-.techXpoLogoBottom{
-    height: 38px;
-}
-.otherDate{
-    margin-left: -45px;
+    }
 
-}
-.otherDate p{
-    width: 130%;
-  }
+    .nothingTeam {
+        height: 120px;
+    }
+
+    .dropdown i {
+        display: none;
+    }
+
+    .dropdown-content {
+        margin-top: 30px;
+    }
+
+    .reveletionsContainer img {
+        width: 90vw;
+    }
+
+    .Programs {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 130px;
+    }
+
+    .Programs a {
+        margin: 10px;
+    }
+
+    .posterImg img {
+        width: 90vw;
+    }
+
+    .contP p {
+        font-size: 13px;
+    }
+
+    .otherEvents img {
+        width: 30%;
+    }
+
+    .otherEvents {
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .techXpoLogoBottom {
+        height: 38px;
+    }
+
+    .otherDate {
+        margin-left: -45px;
+
+    }
+
+    .otherDate p {
+        width: 130%;
+    }
 
 }

@@ -3570,7 +3570,7 @@ footer h6 {
     }
 
 .our-speakers {
-    padding: 180px 0 0
+    /* padding: 180px 0 0 */
 }
 
     .our-speakers .speaker-item {
@@ -5230,8 +5230,9 @@ blockquote {
     .join-our-team {
         padding: 150px 0 120px
     }
-
-    .our-speakers, .about-the-course, .events-our-courses.s-our-courses, .about-testimonials-slider {
+    /* 
+    .our-speakers, */
+  .about-the-course, .events-our-courses.s-our-courses, .about-testimonials-slider {
         padding-top: 150px
     }
 
@@ -5771,8 +5772,8 @@ blockquote {
     .page-contacts, .s-pravicy-policy, .s-professional-training {
         padding: 130px 0
     }
-
-    .sidebar, .our-speakers, .about-the-course, .events-our-courses.s-our-courses, .about-testimonials-slider {
+    /* .our-speakers, */
+    .sidebar,  .about-the-course, .events-our-courses.s-our-courses, .about-testimonials-slider {
         padding-top: 130px
     }
 
@@ -6181,8 +6182,8 @@ blockquote {
     .page-gallery.s-gallery {
         padding-bottom: 68px
     }
-
-    .our-speakers, .about-the-course, .events-our-courses.s-our-courses, .about-testimonials-slider {
+    /* .our-speakers, */
+     .about-the-course, .events-our-courses.s-our-courses, .about-testimonials-slider {
         padding-top: 100px
     }
 

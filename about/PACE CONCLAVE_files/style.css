@@ -3568,10 +3568,10 @@ footer h6 {
     .book-a-place .title-bg-left {
         top: -112px
     }
-
+/* 
 .our-speakers {
-    /* padding: 180px 0 0 */
-}
+    padding: 180px 0 0
+} */
 
     .our-speakers .speaker-item {
         display: -webkit-box;

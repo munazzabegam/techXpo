@@ -41,7 +41,9 @@
 .respHead{
     font-size: 20px;
 }
-
+.videoPlayer video{
+    width: 95vw;
+}
 .respOverview{
     margin-top: 100px !important;
 }

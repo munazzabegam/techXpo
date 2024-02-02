@@ -179,7 +179,7 @@
     }
 
     .paceConnect {
-        margin-top: 0px;
+        margin-top: -60px;
     }
 
     .eventMainPoster h1 {
@@ -253,6 +253,32 @@
 
     .otherDate p {
         width: 130%;
+    }
+
+    /* events page news css  */
+    .row{
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+    .col-md-4{
+        width: 45vw;
+    }
+    .col-md-4:nth-child(2n){
+        margin-left: 12px;
+    }
+    .card{
+        width: 45vw ;
+        height: 230px;
+        margin: 0;
+        margin-bottom: 20px
+    }
+    .card-title{
+        font-size: 18px;
+
+    }
+    .card-text{
+        font-size: 10px;
     }
 
 }

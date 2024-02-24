@@ -1,3 +1,34 @@
+<?php
+session_start(); 
+
+include("../Server/config.php"); 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email']; 
+    $password = $_POST['password']; 
+
+    // Using prepared statement to prevent SQL injection
+    $sql = "SELECT * FROM ParticipationCredentials WHERE email = ? AND password = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ss", $email, $password);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $_SESSION['email'] = $email;
+        
+        header("Location: ../Server/reveletions/index.php");
+        exit(); 
+    } else {
+        $errorMsg = "Invalid email or password!";
+    }
+    
+    $stmt->close(); // Close the prepared statement
+}
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <!-- saved from url=(0053)https://paceconclave.com/registrations/register1.html -->
 <html lang="en" class="supernova js csstransforms csstransforms3d csstransitions js csstransitions euwcvhvxnwv idc0_349 js csstransforms csstransforms3d csstransitions js csstransitions">
@@ -5,7 +36,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-
+<img src="" alt="">
     <title>Registration | Pace Connect</title>
       <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <!-- ===================== META ===================== -->
@@ -22,6 +53,7 @@
     <link rel="stylesheet" href="./form_files/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./form_files/style.css">
     <link rel="stylesheet" href="./form_files/style(1).css">
+    <link rel="stylesheet" href="./form3.css">
 
     <script src="./form_files/jquery-2.2.4.min.js"></script>
 
@@ -94,7 +126,7 @@
     <div class="page-title" style="background-image: linear-gradient(rgba(255, 0, 0, 0.520),rgba(194, 1, 0, 0.520)), url(/Content/assets/img/bg-page-title.jpg); ">
         <div class="container">
             <h1 class="title-line-left">Registration Form</h1>
-            <ul> <a style="color: white;" href="../">Home </a><i class="fa fa-chevron-right"></i> Pace Connect </ul>
+            <ul> <a style="color: white;" href="../">Home </a><i class="fa fa-chevron-right"></i> Revelations </ul>
         </div>
     </div>
     <!--================= PAGE-TITLE END =================-->
@@ -102,84 +134,46 @@
     <section class="page-contacts">
         <div class="container">
             <div class="row">
-
                 <div class="col-12 col-sm-8">
+                    <div class="waviy">
+                        <span style="--i:1">R</span>
+                        <span style="--i:2">E</span>
+                        <span style="--i:3">V</span>
+                        <span style="--i:4">E</span>
+                        <span style="--i:5">L</span>
+                        <span style="--i:6">A</span>
+                        <span style="--i:7">T</span>
+                        <span style="--i:8">I</span>
+                        <span style="--i:9">O</span>
+                        <span style="--i:10">N</span>
+                        <span style="--i:11">S</span>
+                        <span style="--i:12">'</span>
+                        <span style="--i:13">2</span>
+                        <span style="--i:14">4</span>
+                    </div>
                     <!-- ========== form start =========== -->
-                    <form action="../Server/paceConnect/" class="form" method="POST">
+                    <form action="" class="form" method="POST">
+
                         <div class="mb-3">
-                            <label for="TeamName" class="form-label">Team Name:</label>
-                            <input type="text" name="TeamName" required="" class="form-control" id="TeamName" placeholder="Team Name">
+                            <label for="TeamName" class="form-label">Email ID</label>
+                            <input type="text" name="email" required="" class="form-control" id="TeamName" placeholder="Enter your Email">
                         </div>
 
                         <div class="mb-3">
-                            <label for="CollegeName" class="form-label">College Name:</label>
-                            <input type="text" name="CollegeName" required="" class="form-control" id="CollegeName" placeholder="College Name">
+                            <label for="CollegeName" class="form-label">Password</label>
+                            <input type="text" name="password" required="" class="form-control" id="CollegeName" placeholder="Enter your Password">
+
                         </div>
 
-                        <div class="mb-3">
-                            <label for="CollegeAddress" class="form-label">College Address:</label>
-                            <textarea name="CollegeAddress" required="" class="form-control" id="CollegeAddress" placeholder="Enter your College Address" cols="10" rows="5"></textarea>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="TeamLeaderFullName" class="form-label">Team Leader Full Name:</label>
-                            <input type="text" name="TeamLeaderFullName" required="" class="form-control" id="TeamLeaderFullName" placeholder="First Name">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="TeamLeaderEmail" class="form-label">Team Leader Email:</label>
-                            <input type="email" name="TeamLeaderEmail" required="" class="form-control" id="TeamLeaderEmail" placeholder="Email ID of Corresponding Author">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="TeamLeaderPhone" class="form-label">Team Leader Phone:</label>
-                            <input type="tel" name="TeamLeaderPhone" placeholder="Phone Number of Corresponding Author" required="" class="form-control" id="TeamLeaderPhone">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="AltMobile" class="form-label">Alternative Phone:</label>
-                            <input type="tel" name="AltMobile" style="width:310px" placeholder="Alternative Phone Number" class="form-control" id="AltMobile">
-                        </div>
                         <br>
-                        <!-- color palette Competition -->
-                        <div class="author abb form-group">
-                            <h6>Color Palette <small style="font-size: 13px; color: gray;">(Drawing Competition)</small></h6>
-                            <label for="colorPaletteParticipantName" class="form-label">Name of Participant:</label>
-                            <input type="text" class="form-control inputfield" id="colorPaletteParticipantName" name="colorPaletteParticipantName" placeholder="Enter name*" required="">
+                        <div style="color: red;" class="error">
+                            <?php echo $errorMsg; ?>
                         </div>
-                        <br>
-                        <!-- Brain burst Competition -->
-                        <div class="author abb form-group">
-                            <h6>Brain Burst<small style="font-size: 13px; color: gray;">(Quiz Competition)</small>
-                            </h6>
-                            <label for="BrainBurstParticipantName" class="form-label">Name of Participant 1:</label>
-                            <input type="text" class="form-control inputfield" id="BrainBurstParticipantName" name="brainBurstParticipantName" placeholder="Enter name*" required="">
-                            <label for="BrainBurstParticipantName2" class="form-label">Name of Participant 2:</label>
-                            <input type="text" class="form-control inputfield" id="BrainBurstParticipantName2" name="brainBurstParticipantName2" placeholder="Enter name" >
-
-                        </div>
-                        <br>
-
-
-
-                        <!-- Sci Craft Competition -->
-                        <div class="author abb form-group">
-                            <h6>Sci-Craft <small style="font-size: 13px; color: gray;">(Science Model Competiiton)</small></h6>
-                            <label for="ScicraftParticipantName1" class="form-label">Name of Participant 1:</label>
-                            <input type="text" class="form-control inputfield" id="ScicraftParticipantName1" name="scicraftParticipantName1" placeholder="Enter name*" required="">
-                            <label for="ScicraftParticipantName2" class="form-label">Name of Participant 2:</label>
-                            <input type="text" class="form-control inputfield" id="ScicraftParticipantName2" name="scicraftParticipantName2" placeholder="Enter name" >
-                            <label for="ScicraftParticipantName3" class="form-label">Name of Participant 3:</label>
-                            <input type="text" class="form-control inputfield" id="ScicraftParticipantName3" name="scicraftParticipantName3" placeholder="Enter name" >
-                     
-                        </div>
-                        <br>
-
                         <input type="hidden" class="inputfield" id="datetime" name="date_time">
                         <br>
 
                         <span class="submitspan">
-                            <input class="btn btn-primary" type="submit" value="Submit" onclick="generateRegistrationKey();" name="submit">
+                            <input class="btn btn-primary" type="submit" value="Login" onclick="generateRegistrationKey();" name="submit">
                         </span>
                     </form>
 
@@ -193,8 +187,7 @@
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h5 class="title-line-left">Important Message </h5>
                         <ul class="cont-email">
-                            <li style="text-align: justify;">Only a maximum of two registrations from each college will be considered for the Tecxpo event on a first-come, first-served basis. If any college wishes to register an extra team, they can contact the registration committee for further assistance. </li>
-                          <br>  <li>Each participant is allowed to register for only one competition. Please ensure that the same person does not participate in multiple competitions simultaneously.</li>
+                            <li style="text-align: justify;">Unauthorized access or manipulation of the Revelation'24 registration form is strictly prohibited. Any attempt to log in with unauthorized credentials, tamper with other teams' registrations, or engage in activities that disrupt the website or registration process is a punishable offense. Violators may face suspension from college and be subject to fines. </li>
                         </ul>
                     </div>
                     <div class="cont-info-item">
@@ -227,7 +220,6 @@
         </div>
     </section>
     <!--================= PAGE-CONTACTS END =================-->
-
 
 
 

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151719;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+.nothing {
+    height: 100px;
+}
+
+label {
+    font-weight: 600;
+    color: #666;
+}
+
+.box8 {
+    box-shadow: 0px 0px 5px 1px #999;
+    padding: 10px;
+}
+
+.sideContainers {
+
+    justify-content: space-around;
+    width: 45% !important;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+.text-info{
+    color: red !important;
+    font-size: 20px;
+}
+.text-info::before{
+    content: "- ";
+}
+.text-info::after{
+    content: " -";
+}
+.navBarTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background: rgb(231, 3, 3);
+    color: white;
+    width: 100vw;
+    z-index: 100;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+}
+.navBarTop i{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#saveBtn{
+    display: none;
+    background: none;
+    color: white;
+    outline: none;
+    margin-right: 30px;
+    border: none;
+}
+
+.logout{
+    padding: 0;
+    margin: 0;
+  }
+  .logout a{
+    position: fixed;
+    top: 50%;
+    background: red;
+    padding: 5px 10px;
+    right: 0;
+    margin: 0;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    font-weight: bold;
+    color: white !important;
+    border-radius: 10px 10px 0px 0px;
+    margin-right: -20px;
+  
+  }

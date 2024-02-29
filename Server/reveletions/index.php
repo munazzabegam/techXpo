@@ -65,35 +65,41 @@ if (!isset($_SESSION['email'])) {
                 </div>
             </div>
 
-            <!-- pecil sketch and Mimicry  -->
+            <!-- pecil sketch and Vediography  -->
             <div class="row">
                 <div class="sideContainers mt-5">
                     <div>
                         <div style="flex-direction: column;" class="row jumbotron box8">
-                            <div class="col-sm-6 mx-t3 mb-4">
+                            <div class="col-sm-12 mx-t3 mb-4">
                                 <h2 class="text-center text-info">Pencil Sketch</h2>
                             </div>
                             <div class="col-sm-12 form-group">
                                 <label for="name-f">Participant 1 Name</label>
-                                <input type="text" value="<?php echo $SketchPart1   ?>" value="<?php echo $SketchPart1; ?>" class="form-control" name="SketchPart1" data="name-f" placeholder="Enter Participant Name">
+                                <input type="text"  value="<?php echo $SketchPart1; ?>" class="form-control" name="SketchPart1" data="name-f" placeholder="Enter Participant Name">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="name-f">Participant 2 Name</label>
+                                <input type="text"  value="<?php echo $SketchPart2; ?>" class="form-control" name="SketchPart2" data="name-f" placeholder="Enter Participant Name">
                             </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="sideContainers mt-5">
-                    <div>
-                        <div style="flex-direction: column;" class="row jumbotron box8">
+                    <!--  -->
+                    <div style="flex-direction: column;" class="row jumbotron box8">
                             <div class="col-sm-12 mx-t3 mb-4">
-                                <h2 class="text-center text-info">Mimicry</h2>
+                                <h2 class="text-center text-info">VedioGraphy</h2>
                             </div>
                             <div class="col-sm-12 form-group">
                                 <label for="name-f">Participant 1 Name</label>
-                                <input type="text" value="<?php echo $MimicryPart1   ?>" class="form-control" name="MimicryPart1" data="name-f" placeholder="Enter Participant Name">
+                                <input type="text" value="<?php echo $vediographyPart1   ?>" class="form-control" name="vediographyPart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-
+                            <div class="col-sm-12 form-group">
+                                <label for="name-f">Participant 1 Name</label>
+                                <input type="text" value="<?php echo $vediographyPart1   ?>" class="form-control" name="vediographyPart1" data="name-f" placeholder="Enter Participant Name">
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
 
@@ -155,17 +161,13 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 1 Name</label>
                                 <input type="text" value="<?php echo $DumbCharadesPart1   ?>" class="form-control" name="DumbCharadesPart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-                            <div class="col-sm-12 form-group">
-                                <label for="name-f">Participant 2 Name</label>
-                                <input type="text" value="<?php echo $DumbCharadesPart2   ?>" class="form-control" name="DumbCharadesPart2" data="name-f" placeholder="Enter Participant Name">
-                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- mehendi | pookalam  -->
+            <!-- mehendi | mimicry  -->
 
             <div class="row">
                 <div class="sideContainers mt-5">
@@ -178,12 +180,7 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 1 Name</label>
                                 <input type="text" value="<?php echo $MehendiPart1   ?>" class="form-control" name="MehendiPart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-                            <div class="col-sm-12 form-group">
-                                <label for="name-l">Participant 2 Name</label>
-                                <input type="text" value="<?php echo $MehendiPart2   ?>" class="form-control" name="MehendiPart2" data="name-l" placeholder="Enter Participant Name">
-                            </div>
-
-
+                            
                         </div>
                     </div>
 
@@ -191,21 +188,19 @@ if (!isset($_SESSION['email'])) {
                 </div>
                 <div class="sideContainers mt-5">
                     <div>
+                        <!-- -->
+                        <div>
                         <div style="flex-direction: column;" class="row jumbotron box8">
                             <div class="col-sm-12 mx-t3 mb-4">
-                                <h2 class="text-center text-info">Pookalam</h2>
+                                <h2 class="text-center text-info">Mimicry</h2>
                             </div>
                             <div class="col-sm-12 form-group">
                                 <label for="name-f">Participant 1 Name</label>
-                                <input type="text" value="<?php echo $pookalamPart1   ?>" class="form-control" name="pookalamPart1" data="name-f" placeholder="Enter Participant Name">
+                                <input type="text" value="<?php echo $MimicryPart1   ?>" class="form-control" name="MimicryPart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-                            <div class="col-sm-12form-group">
-                                <label for="name-l">Participant 2 Name</label>
-                                <input type="text" value="<?php echo $pookalamPart2   ?>" class="form-control" name="pookalamPart2" data="name-l" placeholder="Enter Participant Name">
-                            </div>
-
 
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -254,7 +249,45 @@ if (!isset($_SESSION['email'])) {
                     </div>
                 </div>
             </div>
-            <!-- cooking without fire  -->
+
+
+            <!-- face painting and kite fest -->
+
+            <div class="row">
+                <div class="sideContainers mt-5">
+                    <div>
+                        <div style="flex-direction: column;" class="row jumbotron box8">
+                            <div class="col-sm-12 mx-t3 mb-4">
+                                <h2 class="text-center text-info">Kite Fest</h2>
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="name-f">Participant 1 Name</label>
+                                <input type="text" value="<?php echo $kitePart1   ?>" class="form-control" name="kitePart1" data="name-f" placeholder="Enter Participant Name">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="sideContainers mt-5">
+                    <div>
+                        <div style="flex-direction: column;" class="row jumbotron box8">
+                            <div class="col-sm-12 mx-t3 mb-4">
+                                <h2 class="text-center text-info">Face Painting</h2>
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="name-f">Participant 1 Name</label>
+                                <input type="text" value="<?php echo $FacePart1   ?>" class="form-control" name="FacePart1" data="name-f" placeholder="Enter Participant Name">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- cooking without fire  and pookalam -->
             <div class="row">
 
                 <div class="sideContainers mt-5">
@@ -284,58 +317,99 @@ if (!isset($_SESSION['email'])) {
                     </div>
                 </div>
                 <div class="sideContainers mt-5">
-                    <div>
-                        <div style="flex-direction: column;" class="row jumbotron box8">
+                    <!-- -->
+                    <div style="flex-direction: column;" class="row jumbotron box8">
                             <div class="col-sm-12 mx-t3 mb-4">
-                                <h2 class="text-center text-info">Singing Solo/ Group</h2>
+                                <h2 class="text-center text-info">Pookalam</h2>
                             </div>
                             <div class="col-sm-12 form-group">
-                                <label for="name-f">Lead Name</label>
-                                <input type="text" value="<?php echo $SingingPart1   ?>" class="form-control" name="SingingPart1" data="name-f" placeholder="Enter Participant Name">
+                                <label for="name-f">Participant 1 Name</label>
+                                <input type="text" value="<?php echo $pookalamPart1   ?>" class="form-control" name="pookalamPart1" data="name-f" placeholder="Enter Participant Name">
+                            </div>
+                            <div class="col-sm-12form-group">
+                                <label for="name-l">Participant 2 Name</label>
+                                <input type="text" value="<?php echo $pookalamPart2   ?>" class="form-control" name="pookalamPart2" data="name-l" placeholder="Enter Participant Name">
+                            </div>  <div class="col-sm-12form-group">
+                                <label for="name-l">Participant 2 Name</label>
+                                <input type="text" value="<?php echo $pookalamPart3   ?>" class="form-control" name="pookalamPart3" data="name-l" placeholder="Enter Participant Name">
                             </div>
 
-                        </div>
+
+                        </div> 
                     </div>
+                    </div>
+
+
                 </div>
             </div>
-            <!-- skit -->
+
+            <!-- solo song -->
+            <div class="row">
+                <div class="sideContainers mt-5">
+                    <div>
+                    <div style="flex-direction: column;" class="row jumbotron box8">
+                                <div class="col-sm-12 mx-t3 mb-4">
+                                    <h2 class="text-center text-info">Singing Solo/ Group</h2>
+                                </div>
+                                <div class="col-sm-12 form-group">
+                                    <label for="name-f">Lead Name</label>
+                                    <input type="text" value="<?php echo $SingingPart1   ?>" class="form-control" name="SingingPart1" data="name-f" placeholder="Enter Participant Name">
+                                </div>
+
+                            </div>
+                    </div>
+
+
+                </div>
+              
+            </div>
+            
+            <!-- girls dance -->
             <div class="container mt-5">
                 <div>
                     <div class="row jumbotron box8">
                         <div class="col-sm-12 mx-t3 mb-4">
-                            <h2 class="text-center text-info">Skit</h2>
+                            <h2 class="text-center text-info">Girls Dance</h2>
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="name-f">Participant 1 Name</label>
-                            <input type="text" value="<?php echo $SkitPart1; ?>" class="form-control" name="SkitPart1" data="name-f" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $girlsdancePart1; ?>" class="form-control" name="girlsdancePart1" data="name-f" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="name-l">Participant 2 Name</label>
-                            <input type="text" value="<?php echo $SkitPart2; ?>" class="form-control" name="SkitPart2" data="name-l" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $girlsdancePart2; ?>" class="form-control" name="girlsdancePart2" data="name-l" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="email">Participant 3 Name</label>
-                            <input type="text" value="<?php echo $SkitPart3; ?>" class="form-control" name="SkitPart3" data="email" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $girlsdancePart3; ?>" class="form-control" name="girlsdancePart3" data="email" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="address-1">Participant 4 Name</label>
-                            <input type="text" value="<?php echo $SkitPart4; ?>" class="form-control" name="SkitPart4" data="address-1" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $girlsdancePart4; ?>" class="form-control" name="girlsdancePart4" data="address-1" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="address-2">Participant 5 Name</label>
-                            <input type="text" value="<?php echo $SkitPart5; ?>" class="form-control" name="SkitPart5" data="address-2" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $girlsdancePart5; ?>" class="form-control" name="girlsdancePart5" data="address-2" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="name-f">Participant 6 Name</label>
-                            <input type="text" value="<?php echo $SkitPart6; ?>" class="form-control" name="SkitPart6" data="name-f" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $girlsdancePart6; ?>" class="form-control" name="girlsdancePart6" data="name-f" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="Country">Participant 7 Name</label>
-                            <input type="text" value="<?php echo $SkitPart7; ?>" class="form-control" name="SkitPart7" data="Country" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $girlsdancePart7; ?>" class="form-control" name="girlsdancePart7" data="Country" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="name-g">Participant 8 Name</label>
-                            <input type="text" value="<?php echo $SkitPart8; ?>" class="form-control" name="SkitPart8" data="name-g" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $girlsdancePart8; ?>" class="form-control" name="girlsdancePart8" data="name-g" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="Country">Participant 7 Name</label>
+                            <input type="text" value="<?php echo $girlsdancePart9; ?>" class="form-control" name="girlsdancePart9" data="Country" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-g">Participant 8 Name</label>
+                            <input type="text" value="<?php echo $girlsdancePart10; ?>" class="form-control" name="girlsdancePart10" data="name-g" placeholder="Enter Participant Name">
                         </div>
 
 
@@ -391,21 +465,12 @@ if (!isset($_SESSION['email'])) {
                             <label for="name-j">Participant 10 Name: </label>
                             <input type="text" value="<?php echo $DancePart10; ?>" class="form-control" name="DancePart10" data="name-j" placeholder="Enter Participant Name">
                         </div>
-                        <div class="col-sm-6 form-group">
-                            <label for="name-k">Participant 11 Name: </label>
-                            <input type="text" value="<?php echo $DancePart11; ?>" class="form-control" name="DancePart11" data="name-k" placeholder="Enter Participant Name">
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <label for="name-l">Participant 12 Name: </label>
-                            <input type="text" value="<?php echo $DancePart12; ?>" class="form-control" name="DancePart12" data="name-l" placeholder="Enter Participant Name">
-                        </div>
                     </div>
 
                 </div>
-
-
             </div>
 
+            <!-- mime  show -->
             <div class="container mt-5">
                 <div>
                     <div class="row jumbotron box8">
@@ -444,26 +509,124 @@ if (!isset($_SESSION['email'])) {
                             <label for="name-h">Participant 8 Name</label>
                             <input type="text" value="<?php echo $MimePart8; ?>" class="form-control" name="MimePart8" data="name-h" placeholder="Enter Participant Name">
                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ramp walk -->
+
+            <div class="container mt-5">
+                <div>
+                    <div class="row jumbotron box8">
+                        <div class="col-sm-12 mx-t3 mb-4">
+                            <h2 class="text-center text-info">Traditional Outfit Ramp Walk</h2>
+                    </div>
                         <div class="col-sm-6 form-group">
-                            <label for="name-i">Participant 9 Name</label>
-                            <input type="text" value="<?php echo $MimePart9; ?>" class="form-control" name="MimePart9" data="name-i" placeholder="Enter Participant Name">
+                            <label for="name-f">Participant 1 Name</label>
+                            <input type="text" value="<?php echo $RampPart1; ?>" class="form-control" name="RampPart1" data="name-f" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
-                            <label for="name-j">Participant 10 Name</label>
-                            <input type="text" value="<?php echo $MimePart10; ?>" class="form-control" name="MimePart10" data="name-j" placeholder="Enter Participant Name">
+                            <label for="name-l">Participant 2 Name</label>
+                            <input type="text" value="<?php echo $RampPart2; ?>" class="form-control" name="RampPart2" data="name-l" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
-                            <label for="name-k">Participant 11 Name </label>
-                            <input type="text" value="<?php echo $MimePart11; ?>" class="form-control" name="MimePart11" data="name-k" placeholder="Enter Participant Name">
+                            <label for="email">Participant 3 Name</label>
+                            <input type="text" value="<?php echo $RampPart3; ?>" class="form-control" name="RampPart3" data="email" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
-                            <label for="name-l">Participant 12 Name </label>
-                            <input type="text" value="<?php echo $MimePart12; ?>" class="form-control" name="MimePart12" data="name-l" placeholder="Enter Participant Name">
+                            <label for="address-1">Participant 4 Name</label>
+                            <input type="text" value="<?php echo $RampPart4; ?>" class="form-control" name="RampPart4" data="address-1" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="address-2">Participant 5 Name</label>
+                            <input type="text" value="<?php echo $RampPart5; ?>" class="form-control" name="RampPart5" data="address-2" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-f">Participant 6 Name</label>
+                            <input type="text" value="<?php echo $RampPart6; ?>" class="form-control" name="RampPart6" data="name-f" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-g">Participant 7 Name</label>
+                            <input type="text" value="<?php echo $RampPart7; ?>" class="form-control" name="RampPart7" data="name-g" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-h">Participant 8 Name</label>
+                            <input type="text" value="<?php echo $RampPart8; ?>" class="form-control" name="RampPart8" data="name-h" placeholder="Enter Participant Name">
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- karoke -->
+            <div class="container mt-5">
+                <div>
+                    <div class="row jumbotron box8">
+                        <div class="col-sm-12 mx-t3 mb-4">
+                            <h2 class="text-center text-info">Group Song Karoke</h2>
+                    </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-f">Participant 1 Name</label>
+                            <input type="text" value="<?php echo $karokePart1; ?>" class="form-control" name="karokePart1" data="name-f" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-l">Participant 2 Name</label>
+                            <input type="text" value="<?php echo $karokePart2; ?>" class="form-control" name="karokePart2" data="name-l" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="email">Participant 3 Name</label>
+                            <input type="text" value="<?php echo $karokePart3; ?>" class="form-control" name="karokePart3" data="email" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="address-1">Participant 4 Name</label>
+                            <input type="text" value="<?php echo $karokePart4; ?>" class="form-control" name="karokePart4" data="address-1" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="address-2">Participant 5 Name</label>
+                            <input type="text" value="<?php echo $karokePart5; ?>" class="form-control" name="karokePart5" data="address-2" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-f">Participant 6 Name</label>
+                            <input type="text" value="<?php echo $karokePart6; ?>" class="form-control" name="karokePart6" data="name-f" placeholder="Enter Participant Name">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- short movies -->
+            <div class="container mt-5">
+                <div>
+                    <div class="row jumbotron box8">
+                        <div class="col-sm-12 mx-t3 mb-4">
+                            <h2 class="text-center text-info">Short Movie</h2>
+                    </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-f">Participant 1 Name</label>
+                            <input type="text" value="<?php echo $moviePart1; ?>" class="form-control" name="moviewPart1" data="name-f" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-l">Participant 2 Name</label>
+                            <input type="text" value="<?php echo $moviePart2; ?>" class="form-control" name="moviewPart2" data="name-l" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="email">Participant 3 Name</label>
+                            <input type="text" value="<?php echo $moviePart3; ?>" class="form-control" name="moviewPart3" data="email" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="address-1">Participant 4 Name</label>
+                            <input type="text" value="<?php echo $moviePart4; ?>" class="form-control" name="moviewPart4" data="address-1" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="address-2">Participant 5 Name</label>
+                            <input type="text" value="<?php echo $moviePart5; ?>" class="form-control" name="moviewPart5" data="address-2" placeholder="Enter Participant Name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="name-f">Participant 6 Name</label>
+                            <input type="text" value="<?php echo $moviePart6; ?>" class="form-control" name="moviewPart6" data="name-f" placeholder="Enter Participant Name">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5"></div>
 
 
         </div><!-- updates end -->

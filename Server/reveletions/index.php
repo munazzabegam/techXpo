@@ -81,12 +81,10 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 2 Name</label>
                                 <input type="text"  value="<?php echo $SketchPart2; ?>" class="form-control" name="SketchPart2" data="name-f" placeholder="Enter Participant Name">
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="sideContainers mt-5">
-                    <!--  -->
                     <div style="flex-direction: column;" class="row jumbotron box8">
                             <div class="col-sm-12 mx-t3 mb-4">
                                 <h2 class="text-center text-info">VedioGraphy</h2>
@@ -115,7 +113,6 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 1 Name</label>
                                 <input type="text" value="<?php echo $FreestylePart1   ?>" class="form-control" name="FreestylePart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -129,7 +126,6 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 1 Name</label>
                                 <input type="text" value="<?php echo $StandupPart1   ?>" class="form-control" name="StandupPart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -161,7 +157,6 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 1 Name</label>
                                 <input type="text" value="<?php echo $DumbCharadesPart1   ?>" class="form-control" name="DumbCharadesPart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -180,7 +175,6 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 1 Name</label>
                                 <input type="text" value="<?php echo $MehendiPart1   ?>" class="form-control" name="MehendiPart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-                            
                         </div>
                     </div>
 
@@ -188,7 +182,6 @@ if (!isset($_SESSION['email'])) {
                 </div>
                 <div class="sideContainers mt-5">
                     <div>
-                        <!-- -->
                         <div>
                         <div style="flex-direction: column;" class="row jumbotron box8">
                             <div class="col-sm-12 mx-t3 mb-4">
@@ -198,7 +191,6 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 1 Name</label>
                                 <input type="text" value="<?php echo $MimicryPart1   ?>" class="form-control" name="MimicryPart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-
                         </div>
                     </div>
                     </div>
@@ -222,8 +214,6 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-l">Participant 2 Name</label>
                                 <input type="text" value="<?php echo $DebatePart2   ?>" class="form-control" name="DebatePart2" data="name-l" placeholder="Enter Participant Name">
                             </div>
-
-
                         </div>
                     </div>
 
@@ -243,8 +233,6 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-l">Participant 2 Name</label>
                                 <input type="text" value="<?php echo $FruitsPart2   ?>" class="form-control" name="FruitsPart2" data="name-l" placeholder="Enter Participant Name">
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -264,10 +252,8 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 1 Name</label>
                                 <input type="text" value="<?php echo $kitePart1   ?>" class="form-control" name="kitePart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-
                         </div>
                     </div>
-
 
                 </div>
                 <div class="sideContainers mt-5">
@@ -280,7 +266,6 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 1 Name</label>
                                 <input type="text" value="<?php echo $FacePart1   ?>" class="form-control" name="FacePart1" data="name-f" placeholder="Enter Participant Name">
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -312,12 +297,10 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-f">Participant 4 Name</label>
                                 <input type="text" value="<?php echo $cookingPart4   ?>" class="form-control" name="cookingPart4" data="name-f" placeholder="Enter Participant Name">
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="sideContainers mt-5">
-                    <!-- -->
                     <div style="flex-direction: column;" class="row jumbotron box8">
                             <div class="col-sm-12 mx-t3 mb-4">
                                 <h2 class="text-center text-info">Pookalam</h2>
@@ -333,13 +316,9 @@ if (!isset($_SESSION['email'])) {
                                 <label for="name-l">Participant 2 Name</label>
                                 <input type="text" value="<?php echo $pookalamPart3   ?>" class="form-control" name="pookalamPart3" data="name-l" placeholder="Enter Participant Name">
                             </div>
-
-
                         </div> 
                     </div>
                     </div>
-
-
                 </div>
             </div>
 
@@ -355,13 +334,9 @@ if (!isset($_SESSION['email'])) {
                                     <label for="name-f">Lead Name</label>
                                     <input type="text" value="<?php echo $SingingPart1   ?>" class="form-control" name="SingingPart1" data="name-f" placeholder="Enter Participant Name">
                                 </div>
-
                             </div>
                     </div>
-
-
                 </div>
-              
             </div>
             
             <!-- girls dance -->
@@ -411,9 +386,6 @@ if (!isset($_SESSION['email'])) {
                             <label for="name-g">Participant 8 Name</label>
                             <input type="text" value="<?php echo $girlsdancePart10; ?>" class="form-control" name="girlsdancePart10" data="name-g" placeholder="Enter Participant Name">
                         </div>
-
-
-
                     </div>
                 </div>
 
@@ -559,10 +531,10 @@ if (!isset($_SESSION['email'])) {
             <!-- karoke -->
             <div class="container mt-5">
                 <div>
-                    <div class="row jumbotron box8">
-                        <div class="col-sm-12 mx-t3 mb-4">
-                            <h2 class="text-center text-info">Group Song Karoke</h2>
-                    </div>
+                        <div class="row jumbotron box8">
+                            <div class="col-sm-12 mx-t3 mb-4">
+                                <h2 class="text-center text-info">Group Song Karoke</h2>
+                        </div>
                         <div class="col-sm-6 form-group">
                             <label for="name-f">Participant 1 Name</label>
                             <input type="text" value="<?php echo $karokePart1; ?>" class="form-control" name="karokePart1" data="name-f" placeholder="Enter Participant Name">
@@ -600,27 +572,27 @@ if (!isset($_SESSION['email'])) {
                     </div>
                         <div class="col-sm-6 form-group">
                             <label for="name-f">Participant 1 Name</label>
-                            <input type="text" value="<?php echo $moviePart1; ?>" class="form-control" name="moviewPart1" data="name-f" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $moviePart1; ?>" class="form-control" name="moviePart1" data="name-f" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="name-l">Participant 2 Name</label>
-                            <input type="text" value="<?php echo $moviePart2; ?>" class="form-control" name="moviewPart2" data="name-l" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $moviePart2; ?>" class="form-control" name="moviePart2" data="name-l" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="email">Participant 3 Name</label>
-                            <input type="text" value="<?php echo $moviePart3; ?>" class="form-control" name="moviewPart3" data="email" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $moviePart3; ?>" class="form-control" name="moviePart3" data="email" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="address-1">Participant 4 Name</label>
-                            <input type="text" value="<?php echo $moviePart4; ?>" class="form-control" name="moviewPart4" data="address-1" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $moviePart4; ?>" class="form-control" name="moviePart4" data="address-1" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="address-2">Participant 5 Name</label>
-                            <input type="text" value="<?php echo $moviePart5; ?>" class="form-control" name="moviewPart5" data="address-2" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $moviePart5; ?>" class="form-control" name="moviePart5" data="address-2" placeholder="Enter Participant Name">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="name-f">Participant 6 Name</label>
-                            <input type="text" value="<?php echo $moviePart6; ?>" class="form-control" name="moviewPart6" data="name-f" placeholder="Enter Participant Name">
+                            <input type="text" value="<?php echo $moviePart6; ?>" class="form-control" name="moviePart6" data="name-f" placeholder="Enter Participant Name">
                         </div>
                     </div>
                 </div>
@@ -652,7 +624,6 @@ if (!isset($_SESSION['email'])) {
                         </div>
                     </div>
                     <a class="phoneLogo" href="https://codewizy.in"><img src="../../images/codewizycredits.png" alt=""></a>
-
                 </div>
             </div>
         </div>

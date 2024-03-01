@@ -1,4 +1,5 @@
 
+-- not required
 
 ALTER TABLE `reveletionsRegistrations` CHANGE `SkitPart1` `girlsdancePart1`
 VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT 'Not Assigned'; 

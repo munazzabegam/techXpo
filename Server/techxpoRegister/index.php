@@ -13,8 +13,8 @@
         <?php
         include('../config.php');
 
-        $prefix = 'TechXpo24';
-        $uniqueId = $prefix . rand(100000, 999999);
+        $prefix = 'TECHXPO24';
+        $uniqueId = $prefix . rand(100, 999);
         $msg = "";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -26,7 +26,7 @@
             $teamLeaderPhone = $_POST['TeamLeaderPhone'];
             $altMobile = $_POST['AltMobile'];
             $reelVistaParticipantName = $_POST['ReelVistaParticipantName'];
-            $battleRoyalParticipantName = $_POST['BattleRoyalParticipantName'];
+            $battleRoyalParticipantName = $_POST['battleRoyalParticipantName'];
             $battleRoyalParticipantName2 = $_POST['battleRoyalParticipantName1'];
             $turboTrackParticipantName = $_POST['TurboTrackParticipantName'];
             $colorCanvasParticipantName1 = $_POST['ColorCanvasParticipantName1'];
@@ -52,7 +52,7 @@
                     echo '<p class="alert alert-success">' . $msg . '</p>';
 
                     // Send email to the submitter
-                    $to = array($teamLeaderEmail,"muhammedazlan20@gmail.com");
+                    $to = array($teamLeaderEmail, "muhammedazlan20@gmail.com");
                     $subject = "TechXpo Registration Successful";
                     $message = "Dear $teamLeaderFullName,
 
@@ -81,7 +81,7 @@ We appreciate your participation in TechXpo. If you have any questions or concer
 Best Regards,
 TechXpo Team
 +91 6361557581";
-                    
+
 
                     // Additional headers
                     $headers = "From: info@techxpo.com";

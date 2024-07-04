@@ -57,13 +57,15 @@ body {
   text-shadow: 0 0 5px #999, 0 0 5px #999, 0 0 30px #999;
 
 }
-
+.teamDropdown{
+  margin-left: -50px !important;
+}
 .tagline {
   color: var(--red);
   position: absolute;
   font-size: 40px;
   left: 0;
-  top: 65%;
+  top: 67%;
   margin: 30px;
   font-weight: bold;
 }
@@ -131,10 +133,32 @@ body {
   display: flex;
 }
 .imgP img{
-  height: 300px !important;
+  height: 400px !important;
   margin-right: 20px;
   margin-top:35px;
   border-radius: 5px;
+  object-fit: cover;
+}
+.eventTypes{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 63%;
+}
+.eventTypes div{
+  display: flex;
+  
+}
+.eventTypes div p{
+  color: black;
+  background: rgb(218, 216, 216);
+  text-align: center;
+  margin: 10px;
+  padding: 3px 3px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 20vw;
+
 }
 
 .secondPage p {
@@ -319,7 +343,21 @@ body {
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       z-index: 1;
     }
+    .videoPlayer video{
+      width: 70vw;
+      text-align: center;
+    }
+    #playPauseBtn {
+      background-color: red;
+      color: white;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      text-align:center;
+      border-radius: 5px;
 
+  }
     .dropdown-content a {
       color: #fff;
       padding: 5px 10px;
@@ -340,7 +378,7 @@ display: flex;
 justify-content: center;
 }
     .posterImg img{
-      width: 60vw;
+      width: 40vw;
     }
     .otherEvents{
       width: 100vw;

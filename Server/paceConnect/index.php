@@ -13,8 +13,8 @@
         <?php
         include('../config.php');
 
-        $prefix = 'TechXpo24';
-        $uniqueId = $prefix . rand(100000, 999999);
+        $prefix = 'PC24';
+        $uniqueId = $prefix . rand(100, 999);
         $msg = "";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {

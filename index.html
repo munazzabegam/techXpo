@@ -15,6 +15,7 @@
     <!-- countdown timer  -->
     <link rel="stylesheet" href="./css/time.css">
     <link rel="stylesheet" href="./css/event.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
     <title>Techxpo | PACE</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -25,285 +26,301 @@
     <div class="navBar" id="navbar">
         <div class="navLogo"><img src="./images/techXpo.png" alt="TechXpo Logo"></div>
         <div class="menu">
-          <a class="navActive" href="./">Home</a>
-          <a href="./event.html" >Events</a>
-          <div class="dropdown">
-            <a >Register <i class="fa fa-chevron-down"></i></a>
-            <div class="dropdown-content">
-                <a href="./forms/form1.html">TechXpo</a>
-                <a href="./forms/form2.html">PaceConnect</a>
-                <a href="./forms/form3.html">Revelations</a>
+            <a class="navActive" href="./">Home</a>
+            <a href="./event.html">Events</a>
+            <div class="dropdown">
+                <a>Register <i class="fa fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="./forms/form1.html">TechXpo</a>
+                    <a href="./forms/form2.html">PaceConnect</a>
+                    <a href="./forms/form3.php">Revelations</a>
+                </div>
             </div>
-          </div>
-          <a href="./teams.html">Team</a>
+            <div class="dropdown">
+                <a>Team <i class="fa fa-chevron-down"></i></a>
+                <div class="dropdown-content teamDropdown">
+                    <a href="./about/">About Us</a>
+                    <a href="./about/commitee.html">Committee</a>
+                </div>
+            </div>
+            <!-- <a href="./teams.html">Team</a> -->
         </div>
-      </div>
+    </div>
     <!-- home page  -->
     <div class="home">
-        <img src="./images/techXpo.png" alt="">
-
+        <img src="./images/tecxpo.png" alt="">
+        <div class="eventTypes">
+            <div>
+                <p>National Tech Fest</p>
+                <p>Auto Expo</p>
+            </div>
+            <div>
+                <p>Project Expo</p>
+                <p>Food Fiesta</p>
+            </div>
+        </div>
         <div class="tagline">
             Flagship Tech Showcase,
             <br>
             <span class="pace">PACE, Mangalore</span>
             <div class="date">
-                29<small>th</small> Feb, 2024</div>
+                09<small>th</small> May, 2024</div>
         </div>
 
     </div>
     <!-- time counter  -->
     <div class="clockTimer relative w-full  m-0 bg-gradient-to-b from-mostlyBlackBlue to-veryDarkBlue
     font-redHatText">
-    <div class="firstPageContainer">
-        <div class="secondPage firstPage">
-            <h1  data-aos-delay="100" data-aos="fade-up">Countdown to techXpo Event</h1>
+        <div class="firstPageContainer">
+            <div class="secondPage firstPage">
+                <h1 data-aos-delay="100" data-aos="fade-up">Countdown to techXpo Event</h1>
+            </div>
         </div>
-    </div>
 
-    <section data-aos-delay="200" data-aos="fade-up" class=" timerContainer w-full h-full flex flex-col justify-center items-center">
+        <section data-aos-delay="200" data-aos="fade-up" class=" timerContainer w-full h-full flex flex-col justify-center items-center">
 
-        <!--Time-->
-        <div class="mt-[80px] flex justify-center items-center gap-[40px] gapofTime">
-            <!--HOURS-->
-            <div class="flex flex-col-reverse justify-center items-center space-y-10">
-                <h1 class="mt-[30px] text-2xl text-grayishBlue font-bold">
-                    DAYS
-                </h1>
-                <div class="flex justify-center items-center">
-                    <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-days>
-                        <!--Top-->
-                        <span class="relative w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
+            <!--Time-->
+            <div class="mt-[80px] flex justify-center items-center gap-[40px] gapofTime">
+                <!--HOURS-->
+                <div class="flex flex-col-reverse justify-center items-center space-y-10">
+                    <h1 class="mt-[30px] text-2xl text-grayishBlue font-bold">
+                        DAYS
+                    </h1>
+                    <div class="flex justify-center items-center">
+                        <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-days>
+                            <!--Top-->
+                            <span class="relative w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
                          rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl">
-                            <div class="absolute w-full h-full flex justify-start items-end">
-                                <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
-                            </div>
-                            <div class="absolute w-full h-full flex justify-end items-end">
-                                <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
-                            </div>
-                            <span class="translate-y-[46px] textSizeofTimee" data-card-top>
-                                00
-                            </span>
-                            <!--FlipTop-->
-                            <span class="absolute w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
-                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl top-flip-shadow" data-flip-top>
                                 <div class="absolute w-full h-full flex justify-start items-end">
                                     <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
                                 </div>
                                 <div class="absolute w-full h-full flex justify-end items-end">
                                     <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
                                 </div>
-                                <span class="translate-y-[46px] textSizeofTimee" data-flip-top-num data-card-top>
+                                <span class="translate-y-[46px] textSizeofTimee" data-card-top>
                                     00
                                 </span>
+                                <!--FlipTop-->
+                                <span class="absolute w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
+                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl top-flip-shadow" data-flip-top>
+                                    <div class="absolute w-full h-full flex justify-start items-end">
+                                        <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <div class="absolute w-full h-full flex justify-end items-end">
+                                        <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <span class="translate-y-[46px] textSizeofTimee" data-flip-top-num data-card-top>
+                                        00
+                                    </span>
+                                </span>
                             </span>
-                        </span>
-                        <!--Bottom-->
-                        <span class="relative w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
+                            <!--Bottom-->
+                            <span class="relative w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
                         rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow">
-                            <div class="absolute w-full h-full flex justify-start items-start">
-                                <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
-                            </div>
-                            <div class="absolute w-full h-full flex justify-end items-start">
-                                <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
-                            </div>
-                            <span class="-translate-y-[45px] textSizeofTime" data-card-bot>00</span>
-                            <!--FlipBottom-->
-                            <span class="absolute w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
-                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow" data-flip-bot>
                                 <div class="absolute w-full h-full flex justify-start items-start">
                                     <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
                                 </div>
                                 <div class="absolute w-full h-full flex justify-end items-start">
                                     <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
                                 </div>
-                                <span class="-translate-y-[45px] textSizeofTime" data-flip-bot-num>00</span>
+                                <span class="-translate-y-[45px] textSizeofTime" data-card-bot>00</span>
+                                <!--FlipBottom-->
+                                <span class="absolute w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
+                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow" data-flip-bot>
+                                    <div class="absolute w-full h-full flex justify-start items-start">
+                                        <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <div class="absolute w-full h-full flex justify-end items-start">
+                                        <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <span class="-translate-y-[45px] textSizeofTime" data-flip-bot-num>00</span>
+                                </span>
                             </span>
-                        </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--HOURS-->
-            <div class="flex flex-col-reverse justify-center items-center space-y-10">
-                <h1 class="mt-[30px] text-2xl text-grayishBlue font-bold">
-                    HOURS
-                </h1>
-                <div class="flex justify-center items-center">
-                    <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-hours>
-                        <!--Top-->
-                        <span class="relative w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
+                <!--HOURS-->
+                <div class="flex flex-col-reverse justify-center items-center space-y-10">
+                    <h1 class="mt-[30px] text-2xl text-grayishBlue font-bold">
+                        HOURS
+                    </h1>
+                    <div class="flex justify-center items-center">
+                        <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-hours>
+                            <!--Top-->
+                            <span class="relative w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
                          rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl">
-                            <div class="absolute w-full h-full flex justify-start items-end">
-                                <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
-                            </div>
-                            <div class="absolute w-full h-full flex justify-end items-end">
-                                <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
-                            </div>
-                            <span class="translate-y-[46px] textSizeofTimee" data-card-top>
-                                00
-                            </span>
-                            <!--FlipTop-->
-                            <span class="absolute w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
-                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl top-flip-shadow" data-flip-top>
                                 <div class="absolute w-full h-full flex justify-start items-end">
                                     <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
                                 </div>
                                 <div class="absolute w-full h-full flex justify-end items-end">
                                     <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
                                 </div>
-                                <span class="translate-y-[46px] textSizeofTimee" data-flip-top-num data-card-top>
+                                <span class="translate-y-[46px] textSizeofTimee" data-card-top>
                                     00
                                 </span>
+                                <!--FlipTop-->
+                                <span class="absolute w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
+                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl top-flip-shadow" data-flip-top>
+                                    <div class="absolute w-full h-full flex justify-start items-end">
+                                        <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <div class="absolute w-full h-full flex justify-end items-end">
+                                        <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <span class="translate-y-[46px] textSizeofTimee" data-flip-top-num data-card-top>
+                                        00
+                                    </span>
+                                </span>
                             </span>
-                        </span>
-                        <!--Bottom-->
-                        <span class="relative w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
+                            <!--Bottom-->
+                            <span class="relative w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
                         rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow">
-                            <div class="absolute w-full h-full flex justify-start items-start">
-                                <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
-                            </div>
-                            <div class="absolute w-full h-full flex justify-end items-start">
-                                <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
-                            </div>
-                            <span class="-translate-y-[45px] textSizeofTime" data-card-bot>00</span>
-                            <!--FlipBottom-->
-                            <span class="absolute w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
-                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow" data-flip-bot>
                                 <div class="absolute w-full h-full flex justify-start items-start">
                                     <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
                                 </div>
                                 <div class="absolute w-full h-full flex justify-end items-start">
                                     <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
                                 </div>
-                                <span class="-translate-y-[45px] textSizeofTime" data-flip-bot-num>00</span>
+                                <span class="-translate-y-[45px] textSizeofTime" data-card-bot>00</span>
+                                <!--FlipBottom-->
+                                <span class="absolute w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
+                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow" data-flip-bot>
+                                    <div class="absolute w-full h-full flex justify-start items-start">
+                                        <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <div class="absolute w-full h-full flex justify-end items-start">
+                                        <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <span class="-translate-y-[45px] textSizeofTime" data-flip-bot-num>00</span>
+                                </span>
                             </span>
-                        </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--MINUTES-->
-            <div class="flex flex-col-reverse justify-center items-center space-y-10">
-                <h1 class="mt-[30px] text-2xl text-grayishBlue font-bold">
-                    MINUTES
-                </h1>
-                <div class="flex justify-center items-center">
-                    <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-minutes>
-                        <!--Top-->
-                        <span class="relative w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
+                <!--MINUTES-->
+                <div class="flex flex-col-reverse justify-center items-center space-y-10">
+                    <h1 class="mt-[30px] text-2xl text-grayishBlue font-bold">
+                        MINUTES
+                    </h1>
+                    <div class="flex justify-center items-center">
+                        <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-minutes>
+                            <!--Top-->
+                            <span class="relative w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
                          rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl">
-                            <div class="absolute w-full h-full flex justify-start items-end">
-                                <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
-                            </div>
-                            <div class="absolute w-full h-full flex justify-end items-end">
-                                <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
-                            </div>
-                            <span class="translate-y-[46px] textSizeofTimee" data-card-top>
-                                00
-                            </span>
-                            <!--FlipTop-->
-                            <span class="absolute w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
-                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl top-flip-shadow" data-flip-top>
                                 <div class="absolute w-full h-full flex justify-start items-end">
                                     <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
                                 </div>
                                 <div class="absolute w-full h-full flex justify-end items-end">
                                     <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
                                 </div>
-                                <span class="translate-y-[46px] textSizeofTimee" data-flip-top-num data-card-top>
+                                <span class="translate-y-[46px] textSizeofTimee" data-card-top>
                                     00
                                 </span>
+                                <!--FlipTop-->
+                                <span class="absolute w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
+                             rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl top-flip-shadow" data-flip-top>
+                                    <div class="absolute w-full h-full flex justify-start items-end">
+                                        <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <div class="absolute w-full h-full flex justify-end items-end">
+                                        <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <span class="translate-y-[46px] textSizeofTimee" data-flip-top-num data-card-top>
+                                        00
+                                    </span>
+                                </span>
                             </span>
-                        </span>
-                        <!--Bottom-->
-                        <span class="relative w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
+                            <!--Bottom-->
+                            <span class="relative w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
                         rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow">
-                            <div class="absolute w-full h-full flex justify-start items-start">
-                                <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
-                            </div>
-                            <div class="absolute w-full h-full flex justify-end items-start">
-                                <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
-                            </div>
-                            <span class="-translate-y-[45px] textSizeofTime" data-card-bot>00</span>
-                            <!--FlipBottom-->
-                            <span class="absolute w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
-                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow" data-flip-bot>
                                 <div class="absolute w-full h-full flex justify-start items-start">
                                     <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
                                 </div>
                                 <div class="absolute w-full h-full flex justify-end items-start">
                                     <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
                                 </div>
-                                <span class="-translate-y-[45px] textSizeofTime" data-flip-bot-num>00</span>
+                                <span class="-translate-y-[45px] textSizeofTime" data-card-bot>00</span>
+                                <!--FlipBottom-->
+                                <span class="absolute w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
+                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow" data-flip-bot>
+                                    <div class="absolute w-full h-full flex justify-start items-start">
+                                        <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <div class="absolute w-full h-full flex justify-end items-start">
+                                        <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <span class="-translate-y-[45px] textSizeofTime" data-flip-bot-num>00</span>
+                                </span>
                             </span>
-                        </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--Seconds-->
-            <div class="flex flex-col-reverse justify-center items-center space-y-10">
-                <h1 class="mt-[30px] text-2xl text-grayishBlue font-bold">
-                    SECONDS
-                </h1>
-                <div class="flex justify-center items-center">
-                    <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-seconds>
-                        <!--Top-->
-                        <span class="relative w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
+                <!--Seconds-->
+                <div class="flex flex-col-reverse justify-center items-center space-y-10">
+                    <h1 class="mt-[30px] text-2xl text-grayishBlue font-bold">
+                        SECONDS
+                    </h1>
+                    <div class="flex justify-center items-center">
+                        <div class="flex flex-col text-softRed space-y-[1px] rounded-xl container-shadow" data-seconds>
+                            <!--Top-->
+                            <span class="relative w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
                          rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl">
-                            <div class="absolute w-full h-full flex justify-start items-end">
-                                <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
-                            </div>
-                            <div class="absolute w-full h-full flex justify-end items-end">
-                                <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
-                            </div>
-                            <span class="translate-y-[46px] textSizeofTimee" data-card-top>
-                                00
-                            </span>
-                            <!--FlipTop-->
-                            <span class="absolute w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
+                                <div class="absolute w-full h-full flex justify-start items-end">
+                                    <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+                                </div>
+                                <div class="absolute w-full h-full flex justify-end items-end">
+                                    <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+                                </div>
+                                <span class="translate-y-[46px] textSizeofTimee" data-card-top>
+                                    00
+                                </span>
+                                <!--FlipTop-->
+                                <span class="absolute w-[180px] h-[90px] bg-slightlyDarkerDesBlue overflow-hidden
                              rounded-tl-xl rounded-tr-xl flex justify-center items-end text-8xl top-flip-shadow">
-                                <div class="absolute w-full h-full flex justify-start items-end" data-flip-top>
-                                    <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
-                                </div>
-                                <div class="absolute w-full h-full flex justify-end items-end">
-                                    <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
-                                </div>
-                                <span class="translate-y-[46px] textSizeofTimee" data-flip-top-num data-card-top>
-                                    00
+                                    <div class="absolute w-full h-full flex justify-start items-end" data-flip-top>
+                                        <div class="w-[10px] h-[8px] rounded-tr-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <div class="absolute w-full h-full flex justify-end items-end">
+                                        <div class="w-[10px] h-[8px] rounded-tl-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <span class="translate-y-[46px] textSizeofTimee" data-flip-top-num data-card-top>
+                                        00
+                                    </span>
                                 </span>
                             </span>
-                        </span>
-                        <!--Bottom-->
-                        <span class="relative w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
+                            <!--Bottom-->
+                            <span class="relative w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
                         rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow">
-                            <div class="absolute w-full h-full flex justify-start items-start">
-                                <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
-                            </div>
-                            <div class="absolute w-full h-full flex justify-end items-start">
-                                <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
-                            </div>
-                            <span class="-translate-y-[45px] textSizeofTime" data-card-bot>00</span>
-                            <!--FlipBottom-->
-                            <span class="absolute w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
-                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow" data-flip-bot>
                                 <div class="absolute w-full h-full flex justify-start items-start">
                                     <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
                                 </div>
                                 <div class="absolute w-full h-full flex justify-end items-start">
                                     <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
                                 </div>
-                                <span class="-translate-y-[45px] textSizeofTime" data-flip-bot-num>00</span>
+                                <span class="-translate-y-[45px] textSizeofTime" data-card-bot>00</span>
+                                <!--FlipBottom-->
+                                <span class="absolute w-[180px] h-[90px] bg-darkDesaturatedBlue overflow-hidden 
+                            rounded-bl-xl rounded-br-xl flex justify-center items-end text-8xl bottom-flip-shadow" data-flip-bot>
+                                    <div class="absolute w-full h-full flex justify-start items-start">
+                                        <div class="w-[10px] h-[8px] rounded-br-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <div class="absolute w-full h-full flex justify-end items-start">
+                                        <div class="w-[10px] h-[8px] rounded-bl-full bg-veryDarkBlue"></div>
+                                    </div>
+                                    <span class="-translate-y-[45px] textSizeofTime" data-flip-bot-num>00</span>
+                                </span>
                             </span>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </section>
+        </section>
     </div>
     <br>
-<div class="regnowBtn">
-    <a  href="./forms/form1.html" data-aos-delay="100" data-aos="fade-up"> Register Now</a>
-</div>
+    <div class="regnowBtn">
+        <a href="./forms/form1.html" data-aos-delay="100" data-aos="fade-up"> Register Now</a>
+    </div>
 
 
     <!-- second secondPage -->
@@ -313,13 +330,37 @@
             <p data-aos-delay="100" data-aos="fade-up">
                 "TechXpo" stands as the premier flagship technical event at P A College of Engineering in Mangalore, encompassing a multitude of competitions and general activities. As the largest inter-collegiate gathering, the event serves as a vital platform for students to exhibit their technical prowess and talents. Beyond the technical sphere, "techXpo" boasts an auto expo component, showcasing a diverse array of luxury and modified vehicles right on the campus grounds. This unique addition brings an exciting dimension to the event, allowing attendees to explore and appreciate innovations in the automotive realm. Overall, "techXpo" is meticulously designed to provide a rich blend of educational and entertaining experiences, contributing significantly to the learning and enjoyment of all participants on campus.</p>
         </div>
+        <div class="videoPlayer">
+            <video id="myVideo" width="640" height="360" controls>
+                <source src="./videos/techxpo.mp4" type="video/mp4">
+                Video cannot be played in ur Browser
+            </video>
+            <button id="playPauseBtn" onclick="togglePlayPause()">Play/Pause</button>
+<style>
+
+</style>
+<script>
+         function togglePlayPause() {
+            var video = document.getElementById("myVideo");
+            var button = document.getElementById("playPauseBtn");
+
+            if (video.paused || video.ended) {
+                video.play();
+                button.innerHTML = "Pause";
+            } else {
+                video.pause();
+                button.innerHTML = "Play";
+            }
+        }
+</script>
+        </div>
     </div>
-    <div class="posterImg">
+    <div data-aos-delay="100" data-aos="fade-up" class="posterImg">
         <img src="./images/techXpoPoster.jpeg" alt="">
     </div>
     <div class="regnowBtn">
         <br>
-        <a  href="./" data-aos-delay="100" data-aos="fade-up"> <i class="fa fa-download"></i> Download Brochure</a>
+        <a href="./images/techXpoPoster.jpeg" data-aos-delay="100" data-aos="fade-up"> <i class="fa fa-download"></i> Download Brochure</a>
     </div>
     <!-- second Third Page -->
     <div class="secondPageContainer">
@@ -328,30 +369,31 @@
             <div data-aos-delay="100" data-aos="fade-up" class="imgP">
                 <img src="./images/pace.jpeg" alt="">
                 <div class="contP">
-                    <p> P.A. College of Engineering (PACE) was established in the year 2000 under the aegis of PAET, with an aim to provide a career-oriented professional education and to produce technically competent engineers with moral and ethical values. The institution is dedicated to promote an effective learning environment that encourages excellence and diversity in thoughts and endeavor. PACE is affiliated to the Visvesvaraya Technological University (VTU), Belgaum and is approved by the All-India Council for Technical Education (AICTE), New Delhi, recognized by the Government of Karnataka and is certified to ISO 9001-2008.
-                        <br><br>
-                        P.A. College of Engineering which instituted with a total intake of 240 students- 60 students each in four disciplines of engineering, has now grown in leaps and bounds. Over the 15 years, new undergraduate programmes, postgraduate programmes in various branches of engineering, MBA courses and Research programmes were added to meet the growing demand in the industry and the intake has been increased to 450 in Engineering courses. Teaching and research facilities at PACE are already among the best and continue to improve. Well qualified faculty with international reputation.
+                    <p> P. A. College of Engineering (PACE), situated in PACE KNOWLEDGE CITY and established in the year 2000, offers diverse undergraduate programs, including Electronics and Communications Engineering, Artificial Intelligence and Machine Learning, Civil Engineering, Mechanical Engineering, Computer Science & Engineering, Biotechnology, and specialized Computer Science & Engineering (IoT, Cybersecurity, including Blockchain Technology). Mechanical Engineering, Computer Science & Engineering, and Biotechnology Programs are accredited by National Board of Accreditation (NBA). PACE also provides MBA and Ph.D. programs, reflecting its holistic education approach.
+                        <br> <br>
+                        <strong> Vision & Mission</strong> <br>
+
+                        PACE is envisaged as a centre of evolution for excellence in Technological, Management and Research Education. The institution aspires to spread universal knowledge through villages and cities enabling expansion of human resources.
+                        <br> • To provide career-oriented professional education to produce technically competent engineers and managers with moral and ethical values.
+                        <br>• To foster and promote an effective learning environment in the campus to be recognized as place that encourages excellence and diversity in thoughts and Endeavour.
+                        <br>• To provide research and intellectual resources to address problems facing the industry and the society while advancing the scopes of multidisciplinary applications.
+                        <br> <a style="color: red;" href="https://pace.edu.in">Read more...</a>
                     </p>
                 </div>
             </div>
-            <p data-aos-delay="150" data-aos="fade-up" class="contentofPA" style="margin-top: 15px;"> A well-developed campus and outstanding infrastructure makes PACE much sought after for technical and management education. The institution regularly invites experts from industry and academia for interaction with students. While helping the students to reach their full potential. PACE also offers innumerable opportunities for extracurricular activities that match nearly every interest.
-
-                PACE is located in Mangalore, a city which has established itself as the knowledge hub of South India and has become a haven for advanced study. Beautiful environment and salubrious climate make Mangalore a dream destination for learning. Mangalore is well connected to the rest of the country by air, rail and road. Nestled amidst lush greenery, P. A. College of Engineering celebrates the serene splendor of pristine nature. Spread across 60 acres, the college offers the perfect setting for an academic environment.
-            </p>
-
-
         </div>
     </div>
-<div class="otherEvents">
-    <div class="otherDate">  <span></span>  <p>29Feb - 03 March</p><span></span>
+    <div class="otherEvents">
+        <div class="otherDate"> <span></span>
+            <p>09 May - 11 May</p><span></span>
+        </div>
+        <br>
+        <div class="row">
+            <img class="techXpoLogoBottom" src="./images/techXpo.png" alt="">
+            <img src="./images/paceconnect.png" alt="" class="col-md">
+            <img src="./images/reveletions.png" alt="" class="col-md">
+        </div>
     </div>
-    <br>
-    <div class="row">
-        <img class="techXpoLogoBottom"  src="./images/techXpo.png" alt="">
-        <img src="./images/paceconnect.png" alt="" class="col-md">
-        <img src="./images/reveletions.png" alt="" class="col-md">
-    </div>
-</div>
 
 
 
@@ -397,4 +439,3 @@
 
 
 </html>
-

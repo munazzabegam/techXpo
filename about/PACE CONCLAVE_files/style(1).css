@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+.partImages img {
+    margin: 15px;
+}
+
+.footerCredContent {
+    display: flex;
+    justify-content: center;
+}
+
+.footerCredits img {
+    height: 60px;
+}
+
+.topLeftLogoSection {
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+    padding: 20px 50px;
+
+}
+.topLeftLogoSection h1{
+    font-size: 20px;
+    color: black;
+    letter-spacing: -0.5px;
+
+}
+.topLeftLogoSection i{
+    font-style: italic ;
+    font-size: 12px;
+    
+}
+.topLeftLogoSection img{
+    width: 200px;
+    
+}
+.topLeftLogoSection p{
+    font-size: 13px;
+    letter-spacing: -0.8px;
+    
+}
+.themeIcon{
+    width:100%;
+    text-align: center;
+}
+.mainSlider{
+    background: rgb(243, 242, 242);
+    
+}
+.activeNav{
+    color: rgb(211, 4, 4) !important;
+}
+
+.shcCov li{
+    font-size: 25px !important;
+    list-style-type: circle;
+    padding: 10px;
+}
+.abb{
+    border-bottom: 1p px solid grey;
+}
+
+.s-schedule-event {
+    padding: 50px !important;
+}
+
+
+.chair-img{
+    border-radius: 10px;
+}
+.ulli{
+    margin-left: 50px;
+}
+.ulli li{
+    margin-bottom: 5px;
+    list-style-type: circle;
+    font-size: 18px;
+}
+.ulli2{
+    margin-left: 10px;
+}
+.ulli2 li{
+    list-style-type:square;
+    margin: 10px;
+}
+    
+.homeImg{
+                                                
+    z-index: 999999999999 !important;
+    color: white;
+    position: absolute;
+    top: 28%;
+    left: 45%;
+    background: rgba(255, 255, 255, 1);
+    padding: 5px;
+    border-radius: 10px;
+    width: 150px;
+}
+.homeTxt{
+    z-index: 999999999999 !important;
+    color: white;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    -webkit-text-stroke: 0.5px black;
+    
+    
+}
+@media (max-width:780px) {
+.homeImg{
+left: 27%;
+height: 60px;
+width: 150px;
+
+}
+.homeTxt{
+    font-size: 20px;
+}
+}
+
+.sacImg{
+    border-radius: 10px;
+    height: 110px;
+}
